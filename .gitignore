@@ -1,6 +1,5 @@
 # built application files
 devtools/
-node_modules/
 lib-cov/
 *.js~
 *~
