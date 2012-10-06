@@ -1,0 +1,33 @@
+{
+  "name": "deviceTracker",
+  "description": "Track devices",
+  "version": "0.0.1",
+  "author": {
+    "name": "Youhsns Hana",
+    "email": "meyouhana@gmail.com"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node index",
+    "test": "make test"
+  },
+  "dependencies": {
+    "express": "3.0.0rc4",
+    "ejs": "*",
+    "stylus": "*",
+    "passport-local": "0.1.6",
+    "passport": "0.1.12",
+    "connect-flash": "*",
+    "mongodb": "1.1.9"
+  },
+"devDependencies": {
+    "mocha": "1.4.x",
+    "sinon": "1.4.x",
+    "should": "1.2.x"
+},
+ "repository": {
+    "type": "git",
+    "url": "git://github.com/Youhana-Hana/deviceTracker.git"
+  },
+  "main": "index"
+}
