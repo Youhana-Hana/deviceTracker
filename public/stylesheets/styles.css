@@ -1,5 +1,5 @@
 /***************************************************
-	      fresh ideas by marija zaric
+          fresh ideas by marija zaric
 	      template distributed by
         http: //freehtml5templates.com	      
 ***************************************************
@@ -196,7 +196,7 @@ h4 span{
 	top:146px;
 	left:50px;
 	background:transparent;
-	margin-top:50px;
+	margin-top:20px;
 }
 			
 header{
@@ -214,10 +214,9 @@ header{
 	width: 960px;
 	position: relative;
 	float: left;
-	height:318px;
-	padding:10px;
+	padding:2px;
 	background:#EAEAEA;
-	margin-top:17px;
+	margin-top:8px;
 	-webkit-border-radius: .5em; 
 	-moz-border-radius: .5em;
 	border-radius: .5em;
@@ -365,17 +364,14 @@ footer{
 
 nav{
 	position:absolute;
-	width:580px;
+	width:400px;
 	top:25px;
 	right:0;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-border-radius: .5em; 
 	-moz-border-radius: .5em;
 	border-radius: .5em;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	background:black;
+	background:#ffffff;
 }
 
 nav ul li{
@@ -487,7 +483,7 @@ nav ul li a.current{
 	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
 	*display: inline;
 	vertical-align: baseline;
-	margin: 8px 41px;
+	margin: 8px 0px;
 	outline: none;
 	cursor: pointer;
 	text-align: center;
@@ -501,6 +497,7 @@ nav ul li a.current{
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	float:right;
 }
 
 .button:hover {
