@@ -1,5 +1,30 @@
-<% if (!user) { %>
-	<h2>Welcome! Please log in.</h2>
-<% } else { %>
-	<h2>Hello, <%= user.username %>.</h2>
-<% } %>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+     <script src="/js/deviceTracker.js"></script>  
+</head>
+<body>
+
+<section class="header">
+<a href="/" class="logo">Device Certification Tracking System</a>
+<button type="button" class="btn" onclick="javascript:register()">Create an Account</button>
+</section>
+
+<section class="body">
+<article>
+<h2>features</h2>
+</article>
+<article>
+<h2>Login</h2>
+</article>
+</section>
+
+<footer>
+  <ul class="horiz">
+    <li><a href="#">Help</a></li>
+    <li><a href="mailto:info@b2m-solutions.com?Subject=DeviceTracker">Contact</a></li>
+    <li>&copy; 2012 Biz2Mobile Ltd</li>
+  </ul>
+</footer>
+</body>
+</html>

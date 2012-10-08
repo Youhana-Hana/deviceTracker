@@ -1,21 +1,27 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>Passport-Local Example</title>
-	</head>
-	<body>
-		<% if (!user) { %>
-			<p>
-			<a href="/">Home</a> | 
-			<a href="/login">Log In</a>
-			</p>
-		<% } else { %>
-			<p>
-			<a href="/">Home</a> | 
-			<a href="/account">Account</a> | 
-			<a href="/logout">Log Out</a>
-			</p>
-		<% } %>
-		<%- body %>
-	</body>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+     <script src="/js/deviceTracker.js"></script>  
+</head>
+<body>
+
+<section class="header">
+<a href="/" class="logo">Device Certification Tracking System</a>
+<button type="button" class="btn" onclick="javascript:register()">Create an Account</button>
+</section>
+
+<div>
+  <section>
+      <%-body -%>
+    </section>
+</div>
+
+<footer>
+  <ul class="horiz">
+    <li><a href="#">Help</a></li>
+    <li><a href="mailto:info@b2m-solutions.com?Subject=DeviceTracker">Contact</a></li>
+    <li>&copy; 2012 Biz2Mobile Ltd</li>
+  </ul>
+</footer>
+</body>
 </html>
