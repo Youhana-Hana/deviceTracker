@@ -45,7 +45,7 @@ html, body{
 	color: black;
 	margin:0 0 1px;
 	line-height: 1.5;
-   background-image:url(../images/bg1.png); 
+   background-image:url(/images/bg1.png); 
 	background-position:left top;
 	background-repeat:repeat;
 }
@@ -164,7 +164,7 @@ h4 span{
 
 .group1 {
 	float: left;
-	width: 613px;
+	width: 500px;
 	position: relative;
 	background:white;
 	padding:15px;
@@ -173,7 +173,7 @@ h4 span{
 	
 .group2 {
 	float: right;
-	width: 277px;
+	width: 290px;
 	position: relative;
 	background:white;
 	padding:15px;
@@ -263,18 +263,18 @@ header{
 	 a.photo_hover2{
 	position:relative;
 	float: left;
-	margin:5px 13px 8px 0;
-	padding: 8px;
+	margin:3px 3px 3px 5;
+	padding: 3px;
 	-webkit-border-radius: .5em; 
 	-moz-border-radius: .5em;
 	border-radius: .5em;
 }
 	a.photo_hover2{ background-color:white;
-	border: 1px solid #E1E1E1;
+	border: 0px solid #E1E1E1;
 
 }
 	a.photo_hover2:hover {
-	border: 1px solid #E1E1E1;
+	border: 0px solid #E1E1E1;
 }
 
 /***************************************************
@@ -429,7 +429,7 @@ nav ul li a.current{
     color:#33CC99;
 	text-align:left;
 	text-decoration:none;
-	background-image:url(../images/circle.png);
+	background-image:url(/images/circle.png);
 	background-position:left;
 	background-repeat: no-repeat;
 	padding-left:20px;
@@ -527,4 +527,36 @@ nav ul li a.current{
  
 .black a {
    color: #ffffff;
-}   
+} 
+
+
+#bodyPannel{
+	color:#4E4628;
+	 padding:0 28px; float:left;}
+#bodyPannel form.search{
+	background-color:#FFFFFF; color:#000000; border:#ECE8DB 1px solid;
+	width:240px; padding:7px 17px 27px 17px; float:left;}
+#bodyPannel form.search h2{
+	background:url(//images/search_h2_bg.gif) no-repeat 0 0 #FFFFFF; color:#786E4E;
+	width:197px; padding:0 0 10px 50px; float:left;
+	font:normal 24px/42px Georgia, "Times New Roman", Times, serif;}
+#bodyPannel form.search h2 span{
+	background-color:#FFFFFF; color:#0B0B0B;
+	font:normal 24px/42px Georgia, "Times New Roman", Times, serif;}
+#bodyPannel form.search label{
+	background-color:#FFFFFF; color:#0B0B0B; margin:0 0 8px 0; float:left;
+	font:bold 10px/28px Arial, Helvetica, sans-serif; text-transform:uppercase;}
+#bodyPannel form.search input{
+	background-color:#EAEAEA; color:#0B0B0B; border:#C3BCA4 1px solid;
+	width:158px; height:22px; padding:2px; margin:0 0 8px 0; float:right;
+	font:normal 14px/20px Arial, Helvetica, sans-serif;}
+#bodyPannel form.search p{
+	background-color:#FFFFFF; color:#CC0000; float:left; margin:6px 0 0 0;
+	font:normal 13px/15px Arial, Helvetica, sans-serif;}
+#bodyPannel form.search input.check{
+	background-color:#EAEAEA; color:#0B0B0B; border:#C3BCA4 1px solid;
+	width:15px; height:15px; float:left; margin:6px 0 0 9px;}
+#bodyPannel form.search input.submit{
+	background:url(/images/submit_bg.gif) no-repeat 37px 0 #FFFFFF; color:#0B0B0B; border:none;
+	width:53px; height:13px; float:right; margin:7px 0 0 0; padding:0 23px 0 0; cursor:pointer;
+	font:normal 10px/13px Arial, Helvetica, sans-serif; text-transform:uppercase;}  
