@@ -19,7 +19,7 @@
     "passport-local": "0.1.6",
     "passport": "0.1.12",
     "connect-flash": "*",
-    "mongodb": "1.1.9"
+    "mongodb": "1.1.11"
   },
 "devDependencies": {
     "mocha": "1.4.x",
