@@ -1,10 +1,32 @@
 <% layout('layout') -%>
 <div id="bodyPannel">
    <h3>Register</h3>
-<form method="post" action="/register" name="register" class="search">
-     <label>email</label><input name="username" type="text" id="username" />
-     <label>Password</label><input name="password" type="password" id="password" />
+<form method="post" action="/register" name="register" id="register" class="search">
+     <label>Firstname</label><input name="FirstName" type="text" id="FirstName" />
+     <label>Lastname</label><input name="LastName" type="text" id="LastName" />
+     <label>Email</label><input name="Email" type="text" id="Email" />
+     <label>Password</label><input name="Password" type="password" id="Password" />
      <label>Confirm Password</label><input name="ConfrimPassword" type="password" id="ConfrimPassword" />
-    </form>
-     <div class="button black"><a href="javascript:submit();">Submit</a></div>
+     <input class="button" type="submit" name="submit" value="Submit"/>
+    </form>  
+
+<script>
+ var frmvalidator = new Validator("register");
+ frmvalidator.EnableFocusOnError(true);
+ frmvalidator.addValidation("FirstName","req","Please enter your First Name");
+ frmvalidator.addValidation("FirstName","maxlen=20",
+        "Max length for FirstName is 20");
+ 
+ frmvalidator.addValidation("LastName","req");
+ frmvalidator.addValidation("LastName","maxlen=20");
+ 
+ frmvalidator.addValidation("Email","maxlen=50");
+ frmvalidator.addValidation("Email","req");
+ frmvalidator.addValidation("Email","email");
+ 
+ frmvalidator.addValidation("Password","req");
+ frmvalidator.addValidation("ConfrimPassword","dontselect=000"); 
+ frmvalidator.addValidation("ConfrimPassword","eqelmnt=Password",
+ "The confirmed password is not same as password"); 
+ </script>
 </div>

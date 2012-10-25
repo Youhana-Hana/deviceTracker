@@ -169,11 +169,12 @@ h4 span{
 	background:white;
 	padding:15px;
 	margin-bottom:10px;
+	border:;
 }
 	
 .group2 {
-	float: right;
-	width: 290px;
+	float: left;
+	width: 300px;
 	position: relative;
 	background:white;
 	padding:15px;
@@ -183,11 +184,12 @@ h4 span{
 	
 .group3 {
 	float: left;
-	width: 613px;
+	width: 100%;
 	position: relative;
 	background:white;
 	padding:15px;
 	margin-top:-28px;
+
 }	
 	
 .group_bannner_left {
@@ -346,7 +348,7 @@ footer{
 }
 
 #FooterTree{
-	position: absolute;
+	position: absolute;							
 	left: 225px;
 	top:26px;
 	color:white;
@@ -510,7 +512,7 @@ nav ul li a.current{
 }
 
 .black {
-	color: #d7d7d7;
+	color: #ffffff;
 	border: solid 1px #333;
 	background: #333;
 	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
@@ -533,10 +535,11 @@ nav ul li a.current{
 #bodyPannel{
 	color:#4E4628;
 	 padding:0 28px; float:left;
+	 width:100%;
 	}
 #bodyPannel form.search{
-	background-color:#FFFFFF; color:#000000; border:#ECE8DB 1px solid;
-	width:100%; padding:7px 17px 27px 17px; float:left;}
+	background-color:#EAEAEA; color:#000000; border:#ECE8DB 1px solid;
+	width:97%; padding:7px 17px 27px 17px; float:left;}
 #bodyPannel form.search h2{
 	background:url(//images/search_h2_bg.gif) no-repeat 0 0 #FFFFFF; color:#786E4E;
 	width:100%; padding:0 0 10px 50px; float:left;
@@ -545,17 +548,17 @@ nav ul li a.current{
 	background-color:#FFFFFF; color:#0B0B0B;
 	font:normal 24px/42px Georgia, "Times New Roman", Times, serif;}
 #bodyPannel form.search label{
-	background-color:#FFFFFF; color:#0B0B0B; margin:0 0 8px 0; float:left;
+	background-color:#EAEAEA; color:#0B0B0B; margin:0 0 8px 0; float:left;
 	width:30%;font:bold 10px/28px Arial, Helvetica, sans-serif; text-transform:uppercase;
 }
 #bodyPannel form.search input{
-	background-color:#EAEAEA; color:#0B0B0B; border:#C3BCA4 1px solid;
+	background-color:#FFFFFF; color:#0B0B0B; border:#C3BCA4 1px solid;
 	width:40%; height:22px; padding:2px; margin:0 0 8px 0; float:right;
 	font:normal 14px/20px Arial, Helvetica, sans-serif;}
 #bodyPannel form.search p{
 	background-color:#FFFFFF; color:#CC0000; float:left; margin:6px 0 0 0;
 	font:normal 13px/15px Arial, Helvetica, sans-serif;}
 #bodyPannel form.search input.submit{
-	background:url(/images/submit_bg.gif) no-repeat 37px 0 #FFFFFF; color:#0B0B0B; border:none;
+	background:url(/images/submit_bg.gif) no-repeat 55px 0 #EAEAEA; color:#0B0B0B; border:none;
 	width:30%; height:13px; float:right; margin:7px 0 0 0; padding:0 23px 0 0; cursor:pointer;
 	font:normal 10px/13px Arial, Helvetica, sans-serif; text-transform:uppercase;}  
