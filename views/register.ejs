@@ -1,5 +1,9 @@
 <% layout('layout') -%>
 <div id="bodyPannel">
+
+<% if (message) { %>
+<p><%= message %></p>
+<% } %>
    <h3>Register</h3>
 <form method="post" action="/register" name="register" id="register" class="search">
      <label>Firstname</label><input name="FirstName" type="text" id="FirstName" />

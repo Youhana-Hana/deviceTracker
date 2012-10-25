@@ -2,7 +2,6 @@ var database = process.env.EXPRESS_COV
   ? require('./../lib-cov/mongodClient.js')
   : require('./../lib/mongodClient.js');
 
-
 var should = require('should');
 
 describe('database', function() {

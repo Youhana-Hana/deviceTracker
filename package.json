@@ -19,7 +19,8 @@
     "passport-local": "0.1.6",
     "passport": "0.1.12",
     "connect-flash": "*",
-    "mongodb": "1.1.11"
+    "mongodb": "1.1.11",
+    "underscore": "1.4.2"
   },
 "devDependencies": {
     "mocha": "1.4.x",
