@@ -9,6 +9,7 @@
 
    <link rel="shortcut icon" href="images/favicon.gif" type="image/x-icon"/> 
    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"/>
+   <script src="/js/gen_validatorv4.js" type="text/javascript"></script>
    </head>
    <body>
 
@@ -24,7 +25,13 @@
 
    <!--start menu-->
    <nav>
-   <div class="button black"><a href="/register">Create an account</a></div>
+   <div class="button black">
+     <% if (!user) { %>
+   <a href="/register">Create an account</a>
+   <% } else { %>
+   <a href="/logout">logout</a>
+   <% } %>
+   </div>
   </nav>  
  <!--end menu-->
 
@@ -68,13 +75,26 @@
 
    <aside class="group2">
    <div id="bodyPannel">
+  <% if (!user) { %>
    <h3>Members area</h3>
   <!-- login form start-->
-   <form method="post" action="/login" name="login" class="search">
-     <label>email</label><input name="name" type="text" id="name" />
+  <% if (message) { %>
+<p><%= message %></p>
+<% } %>
+  
+   <form method="post" action="/login" name="login" id="login" class="search">
+     <label>email</label><input name="username" type="text" id="username" />
      <label>password</label><input name="password" type="password" id="password" />
      <input name="login" type="submit" id="login" value="login" title="Login" class="submit"/>
    </form>
+      <script>
+ var frmvalidator = new Validator("login");
+ frmvalidator.addValidation("username","maxlen=50");
+ frmvalidator.addValidation("username","req");
+ frmvalidator.addValidation("username","email");
+ frmvalidator.addValidation("password","req");
+ </script>
+   <% }%>
    <!-- login form end-->
    </div>
    </aside>
@@ -92,4 +112,6 @@
    </footer>
    <!--end footer-->
    </body>
+
+
 </html>

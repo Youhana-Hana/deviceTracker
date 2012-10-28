@@ -6,31 +6,31 @@
 <% } %>
    <h3>Register</h3>
 <form method="post" action="/register" name="register" id="register" class="search">
-     <label>Firstname</label><input name="FirstName" type="text" id="FirstName" />
-     <label>Lastname</label><input name="LastName" type="text" id="LastName" />
-     <label>Email</label><input name="Email" type="text" id="Email" />
-     <label>Password</label><input name="Password" type="password" id="Password" />
-     <label>Confirm Password</label><input name="ConfrimPassword" type="password" id="ConfrimPassword" />
+     <label>Firstname</label><input name="firstName" type="text" id="firstName" />
+     <label>Lastname</label><input name="lastName" type="text" id="lastName" />
+     <label>Email</label><input name="email" type="text" id="email" />
+     <label>Password</label><input name="password" type="password" id="password" />
+     <label>Confirm Password</label><input name="confrimPassword" type="password" id="confrimPassword" />
      <input class="button" type="submit" name="submit" value="Submit"/>
     </form>  
 
 <script>
  var frmvalidator = new Validator("register");
  frmvalidator.EnableFocusOnError(true);
- frmvalidator.addValidation("FirstName","req","Please enter your First Name");
- frmvalidator.addValidation("FirstName","maxlen=20",
+ frmvalidator.addValidation("firstName","req","Please enter your First Name");
+ frmvalidator.addValidation("firstName","maxlen=20",
         "Max length for FirstName is 20");
  
- frmvalidator.addValidation("LastName","req");
- frmvalidator.addValidation("LastName","maxlen=20");
+ frmvalidator.addValidation("lastName","req");
+ frmvalidator.addValidation("lastName","maxlen=20");
  
- frmvalidator.addValidation("Email","maxlen=50");
- frmvalidator.addValidation("Email","req");
- frmvalidator.addValidation("Email","email");
+ frmvalidator.addValidation("email","maxlen=50");
+ frmvalidator.addValidation("email","req");
+ frmvalidator.addValidation("email","email");
  
- frmvalidator.addValidation("Password","req");
- frmvalidator.addValidation("ConfrimPassword","dontselect=000"); 
- frmvalidator.addValidation("ConfrimPassword","eqelmnt=Password",
+ frmvalidator.addValidation("password","req");
+ frmvalidator.addValidation("confrimPassword","dontselect=000"); 
+ frmvalidator.addValidation("confrimPassword","eqelmnt=password",
  "The confirmed password is not same as password"); 
  </script>
 </div>
